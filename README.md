@@ -48,6 +48,8 @@ Thư mục này đi sâu vào các chủ đề nâng cao, các mẫu thiết k�
     *   `playwright-pros-and-cons.md`: Điểm mạnh và điểm yếu của Playwright.
     *   `real-world-problems.md`: Các vấn đề thực tế khi làm dự án.
     *   `best-practices.md`: Tổng hợp các phương pháp hay nhất.
+    *   `pom-deep-dive.md`: Hướng dẫn chuyên sâu về Page Object Model.
+    *   `pom-practical-applications.md`: Các ứng dụng thực tiễn của POM.
 
 ### 3. `tests/`
 
