@@ -52,6 +52,13 @@ Thư mục này đi sâu vào các chủ đề nâng cao, các mẫu thiết k�
 
 Thư mục này chứa các tệp mã kiểm thử ví dụ được đề cập trong các bài học.
 
+### 4. `project-workflow/`
+
+Nơi chứa các hướng dẫn liên quan đến quy trình làm việc và DevOps cho dự án.
+
+*   `publishing-to-github.md`: Hướng dẫn chi tiết cách đưa dự án lên GitHub.
+*   `ci-with-github-actions.md`: Giải thích về cách thiết lập Tích hợp liên tục (CI) với GitHub Actions.
+
 ## 🚀 Cách sử dụng
 
 1.  **Clone kho lưu trữ này:**
