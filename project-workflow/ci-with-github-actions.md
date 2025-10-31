@@ -1,5 +1,30 @@
 # CI với GitHub Actions cho Playwright
 
+
+### Bây giờ, tôi sẽ tạo tệp playwright.yml với nội dung cấu hình CI. Tệp này sẽ định
+  nghĩa một quy trình thực hiện các bước sau trên một máy chủ ảo mỗi khi bạn đẩy mã:
+
+   1. Lấy mã nguồn mới nhất.
+   2. Cài đặt Node.js.
+   3. Cài đặt các gói phụ thuộc của dự án.
+   4. Cài đặt các trình duyệt Playwright.
+   5. Chạy các bài kiểm tra.
+   6. Tải lên báo cáo kết quả để bạn có thể xem.
+
+### Điều gì sẽ xảy ra tiếp theo?
+
+  1. Bây giờ, bạn hãy add, commit, và push những thay đổi này (bao gồm cả thư mục
+    .github mới) lên kho lưu trữ GitHub của bạn.
+  2. Ngay sau khi bạn đẩy mã lên, hãy truy cập kho lưu trữ của bạn trên GitHub và nhấp
+    vào tab "Actions".
+  3. Bạn sẽ thấy một workflow mới đang chạy. Đây chính là quy trình CI của chúng ta
+    đang thực thi các bài kiểm tra Playwright trên một máy chủ ảo của GitHub.
+
+### Từ bây giờ, mỗi khi bạn đẩy mã lên nhánh main, các bài kiểm tra sẽ được tự động
+chạy, đảm bảo rằng không có thay đổi nào làm hỏng chức năng hiện có của ứng dụng.
+
+---
+
 Continuous Integration (CI) là một quy trình tự động xây dựng và kiểm thử mã nguồn mỗi khi có một thay đổi mới. Việc thiết lập CI cho dự án Playwright của bạn đảm bảo rằng các bài kiểm tra luôn được chạy một cách nhất quán, giúp phát hiện lỗi sớm.
 
 Chúng ta đã sử dụng GitHub Actions, một công cụ CI/CD được tích hợp sâu vào GitHub, để tự động hóa việc này.

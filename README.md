@@ -47,6 +47,7 @@ Thư mục này đi sâu vào các chủ đề nâng cao, các mẫu thiết k�
     *   `niche-cli-scenarios.md`: Các kịch bản đặc biệt và nâng cao.
     *   `playwright-pros-and-cons.md`: Điểm mạnh và điểm yếu của Playwright.
     *   `real-world-problems.md`: Các vấn đề thực tế khi làm dự án.
+    *   `best-practices.md`: Tổng hợp các phương pháp hay nhất.
 
 ### 3. `tests/`
 
@@ -58,6 +59,7 @@ Nơi chứa các hướng dẫn liên quan đến quy trình làm việc và Dev
 
 *   `publishing-to-github.md`: Hướng dẫn chi tiết cách đưa dự án lên GitHub.
 *   `ci-with-github-actions.md`: Giải thích về cách thiết lập Tích hợp liên tục (CI) với GitHub Actions.
+*   `code-quality.md`: Hướng dẫn về Linting, Formatting và Type Checking.
 
 ## 🚀 Cách sử dụng
 
