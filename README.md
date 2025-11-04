@@ -26,6 +26,12 @@ Thư mục này chứa các bài học nền tảng, giới thiệu các khái n
 
 Thư mục này đi sâu vào các chủ đề nâng cao, các mẫu thiết kế, và các vấn đề thực tiễn.
 
+*   **Các bài học được tạo bởi Gemini:**
+    *   `how-to-read-playwright-trace.md`: Hướng dẫn chi tiết cách đọc và phân tích Trace Report.
+    *   `mastering-assertions-and-debugging.md`: Nguyên tắc viết Assertions và luồng thực thi của Test Case.
+    *   `understanding-playwright-locators-has-and-getbylabel.md`: Giải thích chi tiết về `has` và `getByLabel`.
+    *   `debugging-playwright-tests.md`: Kỹ thuật gỡ lỗi và cô lập các bước test.
+    *   `mastering-getbyrole-heading.md`: Hướng dẫn chuyên sâu về `getByRole('heading')`.
 *   **Bài học nâng cao:**
     *   `07-hooks-and-groups.md`: Tổ chức các bài kiểm tra.
     *   `08-authentication.md`: Xử lý đăng nhập.
