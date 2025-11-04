@@ -27,6 +27,7 @@ Thư mục này chứa các bài học nền tảng, giới thiệu các khái n
 Thư mục này đi sâu vào các chủ đề nâng cao, các mẫu thiết kế, và các vấn đề thực tiễn.
 
 *   **Các bài học được tạo bởi Gemini:**
+    *   `how-to-learn-playwright-apis.md`: Phương pháp tìm hiểu và làm chủ các API của Playwright.
     *   `how-to-read-playwright-trace.md`: Hướng dẫn chi tiết cách đọc và phân tích Trace Report.
     *   `mastering-assertions-and-debugging.md`: Nguyên tắc viết Assertions và luồng thực thi của Test Case.
     *   `understanding-playwright-locators-has-and-getbylabel.md`: Giải thích chi tiết về `has` và `getByLabel`.
