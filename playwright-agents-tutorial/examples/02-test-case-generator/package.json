@@ -1,0 +1,14 @@
+{
+  "name": "test-case-generator",
+  "version": "1.0.0",
+  "description": "A simple script to generate Playwright tests from natural language using an AI agent.",
+  "main": "generate-test.js",
+  "scripts": {
+    "generate": "node generate-test.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.1.0" 
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -16,15 +16,33 @@ Giả sử bạn biết có hàm `getByRole` nhưng không chắc nó có nhữn
 
 1.  **Truy cập trang chủ:** Mở trình duyệt và vào [https://playwright.dev/](https://playwright.dev/).
 2.  **Sử dụng thanh tìm kiếm:** Gõ "getByRole" vào thanh tìm kiếm ở đầu trang. Kết quả đầu tiên thường sẽ là trang tài liệu API mà bạn cần.
-3.  **Đọc trang tài liệu API:** Trang này sẽ có cấu trúc rất rõ ràng:
-    *   **Mô tả:** Giải thích mục đích của hàm.
-    *   **Chữ ký hàm (Signature):** Hiển thị các tham số và kiểu dữ liệu của chúng.
-    *   **Bảng tùy chọn (Options Table):** Đây là phần quan trọng nhất. Nó liệt kê tất cả các thuộc tính bạn có thể truyền vào đối tượng `options`, ví dụ:
-        *   `name` (string | RegExp): Lọc theo tên có thể truy cập.
-        *   `level` (number): Lọc theo cấp độ heading.
-        *   `exact` (boolean): Có khớp chính xác văn bản hay không.
-        *   `includeHidden` (boolean): Có bao gồm các phần tử bị ẩn hay không.
-    *   **Ví dụ sử dụng:** Cung cấp các đoạn code mẫu để bạn nhanh chóng nắm bắt cách dùng.
+3.  **Đọc trang tài liệu API:** Trang này sẽ có cấu trúc rất rõ ràng. Hãy đặc biệt chú ý đến phần **bảng tùy chọn (Options Table)**.
+
+#### Ví dụ thực tế: Giải mã các tùy chọn của `getByRole`
+
+Khi bạn xem tài liệu cho `getByRole`, bạn sẽ thấy một bảng mô tả các `options`. Đây chính là nơi giải đáp thắc mắc của bạn về `level` và `name`:
+
+| Tên tùy chọn | Kiểu dữ liệu | Mô tả |
+| :--- | :--- | :--- |
+| `name` | `string \| RegExp` | Lọc theo tên có thể truy cập (văn bản hiển thị, `aria-label`, v.v.). |
+| `level` | `number` (optional) | **A number attribute that is usually present for roles heading...** (Thuộc tính số thường có mặt cho vai trò `heading`...).
+| `exact` | `boolean` (optional) | Có khớp chính xác văn bản hay không... |
+| ... | ... | ... |
+
+**Cách diễn giải:**
+
+*   **Cột "Tên tùy chọn" (`level`, `name`):** Đây là các thuộc tính bạn có thể sử dụng bên trong đối tượng `options`.
+*   **Cột "Mô tả":** Đây là phần giải thích chi tiết cho từng tùy chọn. Đoạn văn bản về "A number attribute..." mà bạn tìm thấy chính là phần mô tả cho tùy chọn `level`.
+
+Như vậy, tài liệu cho thấy rõ ràng rằng `level` và `name` là các thuộc tính hợp lệ để bạn truyền vào `options` của `getByRole`, giúp bạn viết code như sau:
+
+```typescript
+// Sử dụng các tùy chọn đã tìm thấy trong tài liệu
+page.getByRole('heading', { 
+  name: 'Login Page', 
+  level: 2 
+});
+```
 
 > **Bài học:** Hãy đánh dấu trang [https://playwright.dev/docs/api/class-page](https://playwright.dev/docs/api/class-page) làm trang yêu thích. Đây là nơi chứa tài liệu cho hầu hết các API bạn sẽ dùng hàng ngày.
 

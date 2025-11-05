@@ -62,12 +62,27 @@ Thư mục này đi sâu vào các chủ đề nâng cao, các mẫu thiết k�
 
 Thư mục này chứa các tệp mã kiểm thử ví dụ được đề cập trong các bài học.
 
-### 4. `project-workflow/`
+### 4. `playwright-agents-tutorial/`
+
+Thư mục này khám phá sự kết hợp giữa Playwright và AI Agents, từ các khái niệm cơ bản đến các ứng dụng nâng cao như tự động tạo test case, tích hợp với Cucumber (BDD) và test tự sửa lỗi (self-healing).
+
+*   `01-what-are-agents.md`: "Agent" trong bối cảnh Playwright là gì?
+*   `02-learning-plan-overview.md`: Tổng quan lộ trình học tập.
+*   `03-phase1-playwright-fundamentals.md`: Giai đoạn 1 - Nền tảng Playwright.
+*   `04-phase2-integrating-agents.md`: Giai đoạn 2 - Tích hợp Agents vào quy trình làm việc.
+*   `05-best-practices.md`: Các Best Practices khi làm việc với Agents.
+*   `06-advanced-self-healing-tests.md`: Kỹ thuật nâng cao - Test tự sửa lỗi (Self-Healing).
+*   `07-integrating-with-cucumber-bdd.md`: Tích hợp Agents với Cucumber (BDD).
+*   `08-future-and-best-practices.md`: Best Practices và Tương lai của Kiểm thử Tự động.
+*   `examples/`: Thư mục chứa các ví dụ minh họa cho từng cấp độ tích hợp Agent.
+
+### 5. `project-workflow/`
 
 Nơi chứa các hướng dẫn liên quan đến quy trình làm việc và DevOps cho dự án.
 
 *   `publishing-to-github.md`: Hướng dẫn chi tiết cách đưa dự án lên GitHub.
 *   `ci-with-github-actions.md`: Giải thích về cách thiết lập Tích hợp liên tục (CI) với GitHub Actions.
+*   `ci-with-advanced-testing.md`: Tích hợp kiểm thử nâng cao (Agents, Self-Healing, Cucumber) vào CI/CD.
 *   `code-quality.md`: Hướng dẫn về Linting, Formatting và Type Checking.
 
 ## 🚀 Cách sử dụng

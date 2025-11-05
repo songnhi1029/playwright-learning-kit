@@ -47,4 +47,34 @@ Nếu bạn không thể tìm thấy một phần tử bằng các bộ định 
 2.  **Định vị theo Label:** Viết một bộ định vị để tìm trường nhập liệu có nhãn "Username".
 3.  **Định vị theo Role:** Viết một bộ định vị để tìm nút có vai trò là `button` và tên là "Login".
 
+---
+
+## Bài tập thực hành mở rộng
+
+Sử dụng các trang web sau cho các bài tập này:
+*   Trang A: `http://the-internet.herokuapp.com/`
+*   Trang B: `http://the-internet.herokuapp.com/challenging_dom`
+
+### Cơ bản
+
+1.  **(Trang A)** Định vị liên kết (link) có văn bản "Form Authentication" bằng `getByText`.
+2.  **(Trang A)** Định vị tiêu đề chính của trang ("Welcome to the-internet") bằng `getByRole`.
+3.  **(Trang A)** Định vị hình ảnh "Fork me on GitHub" bằng `getByAltText`.
+4.  **(Trang A)** Định vị phần footer của trang ("Powered by Elemental Selenium") bằng CSS selector.
+
+### Trung bình
+
+5.  **(Trang A -> /login)** Định vị trường nhập liệu "Password" bằng `getByLabel`.
+6.  **(Trang A -> /forgot_password)** Định vị trường nhập email bằng `getByPlaceholder` (giả sử nó có placeholder là "E-mail").
+7.  **(Trang B)** Định vị bảng (table) trên trang.
+8.  **(Trang B)** Định vị tất cả các hàng (`<tr>`) trong phần thân của bảng (`<tbody>`). Sử dụng `locator` và `count()` để xác nhận có 10 hàng.
+9.  **(Trang B)** Định vị nút màu xanh dương có chữ "baz".
+
+### Nâng cao
+
+10. **(Trang B)** Định vị ô chứa văn bản "Iuvaret7" và sau đó định vị nút "edit" trên cùng một hàng. (Gợi ý: tìm hàng `<tr>` chứa văn bản, sau đó tìm liên kết `<a>` có chữ "edit" bên trong hàng đó).
+11. **(Trang B)** Định vị ô cuối cùng trong cột "Action" (cột chứa các nút edit/delete).
+12. **(Trang B)** Định vị phần tử `canvas`.
+13. **(Trang B)** Định vị một hàng trong bảng mà **không** chứa văn bản "Apeirian7". (Gợi ý: sử dụng `filter` với `hasNotText`).
+
 **Tệp tiếp theo:** `04-actions.md`

@@ -1,0 +1,8 @@
+Tên test: should allow a user to log in successfully
+
+Các bước:
+1. Đi đến trang '/login'.
+2. Tìm input có label là 'Email' và điền vào 'user@example.com'.
+3. Tìm input có label là 'Password' và điền vào 'password123'.
+4. Click vào button có chữ 'Log In'.
+5. Kiểm tra rằng URL của trang là '/dashboard'.
